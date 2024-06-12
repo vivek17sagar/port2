@@ -3,6 +3,8 @@ import { Box, ThemeProvider } from "@mui/material";
 import bgImage from "../assets/bgImage.png";
 import ProfileGIF from "../container/ProfileGIF";
 import Contact from "./Contact";
+import styled from "styled-components";
+import DialogFull from "../container/DialogFull";
 
 export default function Profile() {
   const handleMouseOver = (e) => {
@@ -17,6 +19,53 @@ export default function Profile() {
     e.target.style.borderColor = "#FCD34D";
   };
 
+  const [open, setOpen] = React.useState(false);
+
+  const ResponsiveText = styled.div`
+    font-size: 16px; /* Default font size */
+
+    @media (min-width: 576px) {
+      font-size: 18px; /* Font size for small devices */
+    }
+
+    @media (min-width: 768px) {
+      font-size: 20px; /* Font size for medium devices */
+    }
+
+    @media (min-width: 992px) {
+      font-size: 24px; /* Font size for large devices */
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 28px; /* Font size for extra-large devices */
+    }
+  `;
+
+  const ResponsiveHead = styled.span`
+    font-size: 16px; /* Default font size */
+    color: #ffb400
+
+    @media (min-width: 576px) {
+      font-size: 18px; /* Font size for small devices */
+      color: #ffb400
+    }
+
+    @media (min-width: 768px) {
+      font-size: 40px; /* Font size for medium devices */
+      color: #ffb400
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 60px; /* Font size for large devices */
+      color: #ffb400
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 80px; /* Font size for extra-large devices */
+      color: #ffb400
+    
+  `;
+
   return (
     <>
       <Box
@@ -26,6 +75,7 @@ export default function Profile() {
           paddingTop: "2rem",
         }}
       >
+        <DialogFull open={open} func={setOpen} />
         <Box
           sx={{
             width: "100%",
@@ -37,13 +87,11 @@ export default function Profile() {
           }}
         >
           <Box>
-            <h1 style={{ fontSize: "3rem" }}>
-              I'm Vivek Sagar{" "}
-              <span style={{ color: "#ffb400", fontSize: "6rem" }}>
-                Front-end
-              </span>{" "}
-              Developer
-            </h1>
+            <ResponsiveText>
+              I'm Vivek Sagar
+              <ResponsiveHead>Front-end</ResponsiveHead> Developer
+            </ResponsiveText>
+
             <h5
               style={{
                 fontWeight: "500",
@@ -82,13 +130,35 @@ export default function Profile() {
             >
               Hire Me
             </button>
+            <button
+              style={{
+                backgroundColor: "#FCD34D",
+                marginTop: "1.25rem",
+                transition:
+                  "background-color 0.3s, color 0.3s, border-color 0.3s",
+                color: "white",
+                fontWeight: "600",
+                padding: "0.5rem 1rem",
+                border: "1px solid #FCD34D",
+                borderRadius: "0.375rem",
+                cursor: "pointer",
+                marginLeft: "1rem",
+              }}
+              // onMouseOver={handleMouseOver}
+              // onMouseOut={handleMouseOut}
+              onClick={() => setOpen(true)}
+            >
+              Projects
+            </button>
           </Box>
           <Box>
             <ProfileGIF />
           </Box>
         </Box>
       </Box>
-      <Contact />
+      <Box sx={{ position: "fixed" }}>
+        <Contact />
+      </Box>
     </>
   );
 }

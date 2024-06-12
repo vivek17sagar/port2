@@ -15,7 +15,7 @@ const Skill = () => {
     <Box sx={{ display: "flex", justifyContent: "center", paddingTop: "2rem" }}>
       <Box
         sx={{
-          width: "70%",
+          width: "85%",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",

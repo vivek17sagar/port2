@@ -1,0 +1,36 @@
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+
+.gif-container > div {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .gif-container > div {
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+  .gif-container > div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gif-container > div {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gif-container > div {
+    width: 30%;
+  }
+}

@@ -1,6 +1,7 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import "../App.css";
 
 export default function Header() {
   const h4Style = {
@@ -38,6 +39,7 @@ export default function Header() {
             fontSize: "2rem",
             color: "#ffb400",
           }}
+          className="heading"
         >
           Portfolio
         </Box>

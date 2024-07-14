@@ -3,10 +3,11 @@ import linkdin from "../assets/linkdin.gif";
 import git from "../assets/git.png";
 import gmail from "../assets/mail.gif";
 import leet from "../assets/leet.png";
+import "./index.css";
 
 const Contact = () => {
   return (
-    <div className="absolute bottom-48 flex flex-col gap-5">
+    <div className="absolute bottom-48 flex flex-col gap-5 contact">
       <div
         className="absolute transition-all p-2 pr-8 delay-150 rounded-r-lg   flex gap-4 overflow-hidden bg-[#ffb400] text-black font-semibold -left-[70px] hover:left-0 duration-400 cursor-pointer"
         onClick={() =>

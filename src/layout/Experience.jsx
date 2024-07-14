@@ -22,7 +22,7 @@ export default function Education() {
           borderRadius: "0.5rem",
         }}
       >
-        <Box sx={{ transform: "scaleX(-1) " }}>
+        <Box className="experince_gif" sx={{ transform: "scaleX(-1) " }}>
           <ExperienceGIF />
         </Box>
 
@@ -30,7 +30,7 @@ export default function Education() {
           sx={{
             boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
             display: "flex",
-            width: "60%",
+            minWidth: "450px",
             padding: "1rem",
             borderRadius: "0.5rem",
           }}

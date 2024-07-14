@@ -27,8 +27,15 @@ import spotify_img4 from "../assets/spotify-img4.jpeg";
 import spotify_img5 from "../assets/spotify-img5.jpeg";
 import spotify_img6 from "../assets/spotify-img6.jpeg";
 
+import tava_imag1 from "../assets/tava_imag1.jpeg";
+import tava_imag2 from "../assets/tava_imag2.jpeg";
+import tava_imag3 from "../assets/tava_imag3.jpeg";
+import tava_mainImag from "../assets/tava_mainImag.jpeg";
+import "./index.css";
+
 export default function Project() {
   const [activeSkill, setActiveSkill] = React.useState("technical");
+
   return (
     <>
       <Box
@@ -58,7 +65,7 @@ export default function Project() {
                 ReactJS
               </AccordionSummary>
               <AccordionDetails>
-                <div className="flex justify-between">
+                <div className="project-cont flex justify-between">
                   <div className="flex gap-4 p-5">
                     <div>
                       <div>
@@ -106,7 +113,7 @@ export default function Project() {
                       </div>
                     </div>
                   </div>
-                  <div className="p-5 text-black">
+                  <div className="project-desc p-5 text-black">
                     <div>
                       <h1 className="text-black text-[2rem] pb-2">
                         Layers-Skin
@@ -166,8 +173,8 @@ export default function Project() {
                 Javascript
               </AccordionSummary>
               <AccordionDetails>
-                <div className="flex">
-                  <div className="p-5 text-black">
+                <div className="project-cont flex">
+                  <div className="project-desc p-5 text-black">
                     <div>
                       <h1 className="text-black text-[2rem] pb-2">Spotify</h1>
                     </div>
@@ -217,15 +224,15 @@ export default function Project() {
                     </div>
                   </div>
                   <div className="flex gap-4 ">
-                    <div>
+                    {/* <div>
                       <div>
                         <img
-                          src={spotify_full_img}
+                          src={spotify_img2}
                           alt="layer-full-img"
-                          className="w-40 h-80 hover:scale-125 cursor-pointer duration-200"
+                          className="w-40  hover:scale-125 cursor-pointer duration-200"
                         />
                       </div>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col gap-10">
                       <div className="flex gap-2">
                         <img
@@ -264,26 +271,122 @@ export default function Project() {
                     </div>
                   </div>
                 </div>
+                <hr />
+                <div className="project-cont flex justify-between">
+                  <div className="flex gap-4 p-5">
+                    {/* <div>
+                      <div>
+                        <img
+                          src={tava_mainImag}
+                          alt="layer-full-img"
+                          className="w-44 hover:scale-125 cursor-pointer duration-200"
+                        />
+                      </div>
+                    </div> */}
+                    <div className="flex flex-col gap-10">
+                      <div className="flex gap-2">
+                        <img
+                          src={tava_imag1}
+                          alt="layer-full-img"
+                          className="w-40 hover:scale-125 cursor-pointer duration-200"
+                        />
+                        <img
+                          src={tava_imag2}
+                          alt="layer-full-img"
+                          className="w-40 hover:scale-125 cursor-pointer duration-200"
+                        />
+                        <img
+                          src={tava_imag3}
+                          alt="layer-full-img"
+                          className="w-40 hover:scale-125 cursor-pointer duration-200"
+                        />
+                      </div>
+                      <div className="flex gap-2">
+                        <img
+                          src={tava_imag3}
+                          alt="layer-full-img"
+                          className="w-40 hover:scale-125 cursor-pointer duration-200"
+                        />
+                        <img
+                          src={tava_imag2}
+                          alt="layer-full-img"
+                          className="w-40 hover:scale-125 cursor-pointer duration-200"
+                        />
+                        <img
+                          src={tava_imag1}
+                          alt="layer-full-img"
+                          className="w-40 hover:scale-125 cursor-pointer duration-200"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="project-desc p-5 text-black">
+                    <div>
+                      <h1 className="text-black text-[2rem] pb-2">
+                        TAVA-Taskmaker
+                      </h1>
+                    </div>
+                    <li>
+                      User can add task and also track live expire time of your
+                      task, delete tasks, get Alerts, pending tasks etc.
+                    </li>
+                    <li>
+                      See all updates(Completed,Deleted,Pending) functionality,
+                      track time functionality, Alert functionality, Sort
+                      functionality.
+                    </li>
+
+                    <h2 className="mt-5">
+                      {" "}
+                      This app aids in task organization during the day.
+                      <br /> The task has also have expire time before this you
+                      want to complete it.
+                      <br /> There are different section in page where you can
+                      see all updated you did on TAVA.
+                      <br /> You add task and also put the specific time in it
+                      before which time uu will want to complete
+                      <br /> it it will also give you alert and also the whole
+                      task will be arranged in sorted manner every time
+                      automatically.
+                      <br /> soo it has many functionalities like that
+                    </h2>
+                    <div className="flex gap-5 mt-5">
+                      <button
+                        className="bg-transparent hover:bg-yellow-500 text-yellow-400 font-semibold hover:text-white py-2 px-4 border border-yellow-300 hover:border-transparent rounded"
+                        onClick={() =>
+                          window.open(
+                            "https://647e7d4ea3156c3d4d08857e--stupendous-stardust-176183.netlify.app/"
+                          )
+                        }
+                      >
+                        Hosted URL
+                      </button>
+                      <button
+                        className="bg-transparent hover:bg-yellow-500 text-yellow-400 font-semibold hover:text-white py-2 px-4 border border-yellow-300 hover:border-transparent rounded"
+                        onClick={() =>
+                          window.open(
+                            "  https://github.com/vivek17sagar/Layers-Skin"
+                          )
+                        }
+                      >
+                        Code URL
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </AccordionDetails>
             </Accordion>
-            <Accordion defaultExpanded>
+            {/* <Accordion defaultExpanded>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel3-content"
                 id="panel3-header"
+                className="text-4xl"
               >
-                Accordion Actions
+                HTML-CSS
               </AccordionSummary>
-              <AccordionDetails>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </AccordionDetails>
-              <AccordionActions>
-                <Button>Cancel</Button>
-                <Button>Agree</Button>
-              </AccordionActions>
-            </Accordion>
+              <AccordionDetails></AccordionDetails>
+            </Accordion> */}
           </div>
         </Box>
       </Box>

@@ -1,10 +1,12 @@
 import * as React from "react";
 import { Box, ThemeProvider } from "@mui/material";
-import bgImage from "../assets/bgImage.png";
+// import bgImage from "../assets/bgImage.png";
 import ProfileGIF from "../container/ProfileGIF";
 import Contact from "./Contact";
 import styled from "styled-components";
 import DialogFull from "../container/DialogFull";
+import "../App.css";
+import "./index.css";
 
 export default function Profile() {
   const handleMouseOver = (e) => {
@@ -83,7 +85,7 @@ export default function Profile() {
             alignItems: "center",
             justifyContent: "space-around",
             borderRadius: "0.5rem",
-            padding: "2rem",
+            padding: "2rem 2rem 4rem 4rem",
           }}
         >
           <Box>
@@ -95,9 +97,11 @@ export default function Profile() {
             <h5
               style={{
                 fontWeight: "500",
-                fontSize: "0.8rem",
+                fontSize: "1rem",
                 wordSpacing: "0.3rem",
+                // minWidth: "900px",
               }}
+              className="subtitle"
             >
               With one year of experience as a Frontend Developer at Track Four
               Infotech Pvt Ltd,
@@ -151,7 +155,7 @@ export default function Profile() {
               Projects
             </button>
           </Box>
-          <Box>
+          <Box className="profile_gif">
             <ProfileGIF />
           </Box>
         </Box>

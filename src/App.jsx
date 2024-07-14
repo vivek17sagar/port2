@@ -25,10 +25,12 @@ function App() {
         <Box
           sx={{
             width: "20%",
+            minWidth: "400px",
             boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
             marginTop: "2rem",
             borderRadius: "0.5rem",
           }}
+          classname="sideDetails"
         >
           <Skillfield />
           <hr />

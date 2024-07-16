@@ -27,7 +27,7 @@ export default function Header() {
           borderRadius: "0.5rem",
           display: "flex",
           alignItems: "center",
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+          // boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           padding: "1rem 2rem",
         }}
       >
@@ -36,14 +36,14 @@ export default function Header() {
           component="div"
           sx={{
             flexGrow: 1,
-            fontSize: "2rem",
+            fontSize: "4rem",
             color: "#ffb400",
           }}
           className="heading"
         >
           Portfolio
         </Box>
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             justifyContent: "space-around",
@@ -64,7 +64,7 @@ export default function Header() {
               {text}
             </h4>
           ))}
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

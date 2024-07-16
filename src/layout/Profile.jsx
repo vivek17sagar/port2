@@ -85,7 +85,7 @@ export default function Profile() {
             alignItems: "center",
             justifyContent: "space-around",
             borderRadius: "0.5rem",
-            padding: "2rem 2rem 4rem 4rem",
+            padding: "2rem 2rem 10rem 10rem",
           }}
         >
           <Box>
@@ -116,24 +116,30 @@ export default function Profile() {
               projects in the frontend development domain at Track Four
               Infotech.
             </h5>
-            <button
-              style={{
-                backgroundColor: "transparent",
-                marginTop: "1.25rem",
-                transition:
-                  "background-color 0.3s, color 0.3s, border-color 0.3s",
-                color: "#FBBF24",
-                fontWeight: "600",
-                padding: "0.5rem 1rem",
-                border: "1px solid #FCD34D",
-                borderRadius: "0.375rem",
-                cursor: "pointer",
-              }}
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
+
+            <a
+              href="mailto:viveksagar7319@gmail.com"
+              style={{ textDecoration: "none" }}
             >
-              Hire Me
-            </button>
+              <button
+                style={{
+                  backgroundColor: "transparent",
+                  marginTop: "1.25rem",
+                  transition:
+                    "background-color 0.3s, color 0.3s, border-color 0.3s",
+                  color: "#FBBF24",
+                  fontWeight: "600",
+                  padding: "0.5rem 1rem",
+                  border: "1px solid #FCD34D",
+                  borderRadius: "0.375rem",
+                  cursor: "pointer",
+                }}
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+              >
+                Hire Me
+              </button>
+            </a>
             <button
               style={{
                 backgroundColor: "#FCD34D",

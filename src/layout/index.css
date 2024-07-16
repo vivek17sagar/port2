@@ -1,8 +1,20 @@
+.skillChart {
+  width: 50% !important;
+  margin-top: 20px !important;
+}
+
+.subtitle {
+  /* background-color: lightgreen; */
+  font-size: 0.85rem !important;
+  min-width: 900px !important;
+  /* margin-left: 2rem; */
+}
+
 @media only screen and (max-width: 1600px) {
   .subtitle {
     /* background-color: lightgreen; */
     font-size: 0.8rem !important;
-    min-width: 800px !important;
+    min-width: 900px !important;
   }
   .contact {
     bottom: 20px !important;

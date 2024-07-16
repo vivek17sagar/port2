@@ -26,8 +26,6 @@ const Skill = () => {
 
   function onViewportSizeChange() {
     const viewportWidth = window.innerWidth;
-    console.log("Viewport size changed!");
-    console.log("Current viewport width:", viewportWidth);
     if (viewportWidth <= 1440) {
       setswitchSkill(1);
     } else {
@@ -128,7 +126,7 @@ const Skill = () => {
           <ResSkill setActiveSkill={setActiveSkill} />
         )}
         <Box
-          className="border-solid p-[5rem] flex flex-col gap-5 min-h-[700px] skillChart"
+          className="skillChart border-solid p-[5rem] flex flex-col gap-5 min-h-[700px]"
           sx={{
             borderRadius: "16px",
             backdropFilter: "blur(3px)",

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../layout/index.css";
 const Chart = ({ dataSet, activeSkill }) => {
   console.log(dataSet);
   return (
@@ -7,7 +7,7 @@ const Chart = ({ dataSet, activeSkill }) => {
       {dataSet[`${activeSkill}`].map((item, index) => {
         return (
           <div>
-            <div className="flex justify-between">
+            <div className="flex justify-between w-auto">
               <div className={`mb-1 text-base font-medium dark:text-black`}>
                 {item?.name}
               </div>

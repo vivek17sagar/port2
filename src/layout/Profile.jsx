@@ -5,7 +5,7 @@ import ProfileGIF from "../container/ProfileGIF";
 import Contact from "./Contact";
 import styled from "styled-components";
 import DialogFull from "../container/DialogFull";
-import "../App.css";
+// import "../App.css";
 import "./index.css";
 
 export default function Profile() {
@@ -35,7 +35,7 @@ export default function Profile() {
     }
 
     @media (min-width: 992px) {
-      font-size: 24px; /* Font size for large devices */
+      font-size: 18px; /* Font size for large devices */
     }
 
     @media (min-width: 1200px) {
@@ -78,16 +78,7 @@ export default function Profile() {
         }}
       >
         <DialogFull open={open} func={setOpen} />
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-            borderRadius: "0.5rem",
-            padding: "2rem 2rem 10rem 10rem",
-          }}
-        >
+        <div className="profile_box">
           <Box>
             <ResponsiveText>
               I'm Vivek Sagar
@@ -164,7 +155,7 @@ export default function Profile() {
           <Box className="profile_gif">
             <ProfileGIF />
           </Box>
-        </Box>
+        </div>
       </Box>
       <Box sx={{ position: "fixed" }}>
         <Contact />

@@ -30,7 +30,7 @@ function App() {
             marginTop: "2rem",
             borderRadius: "0.5rem",
           }}
-          classname="sideDetails"
+          className="sideDetails"
         >
           <Skillfield />
           <hr />

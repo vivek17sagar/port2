@@ -6,16 +6,28 @@
 .subtitle {
   /* background-color: lightgreen; */
   font-size: 0.85rem !important;
-  min-width: 900px !important;
+  min-width: 800px !important;
   /* margin-left: 2rem; */
 }
+.profile_gif {
+  padding: 0px !important;
+}
 
+.profile_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  border-radius: 0.5rem;
+  padding: 2rem 2rem 10rem 10rem;
+}
 @media only screen and (max-width: 1600px) {
   .subtitle {
     /* background-color: lightgreen; */
-    font-size: 0.8rem !important;
-    min-width: 900px !important;
+    font-size: 0.6rem !important;
+    min-width: 700px !important;
   }
+
   .contact {
     bottom: 20px !important;
   }
@@ -40,13 +52,25 @@
   .project-desc {
     font-size: 0.75rem !important;
   }
+  .profile_box {
+    padding: "2rem 2rem 10rem 5rem" !important;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
+  .subtitle {
+    /* background-color: lightgreen; */
+    font-size: 0.5rem !important;
+    min-width: 600px !important;
+  }
   .skillChart {
     width: 100% !important;
     margin-top: 20px !important;
   }
+  .profile_box {
+    padding: 2rem 2rem 10rem 5rem;
+  }
+
   .experince_gif {
     /* display: "none" !important; */
     display: none !important;
@@ -56,8 +80,8 @@
 @media only screen and (max-width: 1025px) {
   .subtitle {
     /* background-color: lightgreen; */
-    font-size: 0.6rem !important;
-    min-width: 650px !important;
+    font-size: 0.4rem !important;
+    min-width: 550px !important;
   }
   .project-cont {
     display: flex !important;

@@ -14,10 +14,10 @@
   font-style: normal;
 }
 
-@media only screen and (max-width: 1025px) {
+/* @media only screen and (max-width: 1025px) {
   .sideDetails {
-    /* background-color: lightgreen; */
+    background-color: lightgreen;
     background-color: blueviolet !important;
     border: 5px solid blue !important;
   }
-}
+} */
